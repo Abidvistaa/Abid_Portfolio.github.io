@@ -215,14 +215,14 @@ section{
 }
 .education .edu-content .year{
     padding-left: 200px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .education .edu-content .a{
     border: 5px solid salmon;
     border-radius: 50%;
     margin-top: 30px;
-    margin-bottom: 140px;
+    margin-bottom: 145px;
     padding: 10px;
     box-shadow: 0 0 9px;
 }
@@ -231,7 +231,7 @@ section{
     box-shadow: 0 0 9px;
     border: 5px solid salmon;
     border-radius: 50%;
-    margin-bottom: 135px;
+    margin-bottom: 140px;
     padding: 10px;
 }
 .education .edu-content .c{
@@ -246,7 +246,7 @@ section{
 }
 .bsc{
     box-shadow: 0 0 7px;
-    height: 185px;
+    height: 190px;
     border: 2px solid brown;
     border-radius: 22px;
     margin-bottom: 15px;
@@ -259,7 +259,7 @@ section{
 
  .hsc{
     box-shadow: 0 0 7px;
-    height: 185px;
+    height: 190px;
     border: 2px solid brown;
     border-radius: 22px;
     margin-bottom: 15px;
@@ -272,7 +272,7 @@ section{
 
 .ssc{
     box-shadow: 0 0 7px;
-    height: 185px;
+    height: 190px;
     border: 2px solid brown;
     border-radius: 22px;
     padding: 6px;
@@ -653,13 +653,13 @@ footer span a:hover{
     .skills-content .right{margin-top: auto;}
     
     .education .edu-content .a{
-        margin-bottom: 130px;
+        margin-bottom: 140px;
         
     }
     
     .education .edu-content .b{
         
-        margin-bottom: 140px;
+        margin-bottom: 150px;
         
     }
     
@@ -674,13 +674,13 @@ footer span a:hover{
 
     }
     .education .edu-content .a{
-        margin-bottom: 130px;
+        margin-bottom: 140px;
         
     }
     
     .education .edu-content .b{
         
-        margin-bottom: 140px;
+        margin-bottom: 150px;
         
     }
     .education .edu-content .year{
