@@ -169,6 +169,7 @@ section{
     background: #F5F5F5;
     color: black;
     width: 100%;
+    background-size: auto;
 }
 
 .education p{
@@ -424,6 +425,7 @@ section{
 .project{
     background-color: #F5F5F5;
     width: 100%;
+    background-size: auto;
 }
 .project .title{
     position: relative;
@@ -528,6 +530,7 @@ section{
     background: #34495E ;
     color: white;
     width: 100%;
+    
 }
 .contact .title{
     position: relative;
