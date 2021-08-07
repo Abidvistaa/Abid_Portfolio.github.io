@@ -21,7 +21,7 @@ $(document).ready(function(){
         }else{
             $('.hsc').removeClass("show2");
         }
-        if(this.scrollY>550){
+        if(this.scrollY>560){
             $('.ssc').addClass("show3");
         }else{
             $('.ssc').removeClass("show3");
