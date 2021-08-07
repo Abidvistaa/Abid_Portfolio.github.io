@@ -214,7 +214,7 @@ section{
     margin-top: 100px;
 }
 .education .edu-content .year{
-    padding-left: 190px;
+    padding-left: 200px;
     margin-top: 25px;
 }
 
@@ -239,10 +239,11 @@ section{
     padding: 10px;
 }
 .education .edu-content .detail{
-    padding-right: 190px;
+    padding-right: 200px;
 
 }
 .bsc{
+    
     border: 2px solid brown;
     border-radius: 22px;
     margin-bottom: 15px;
@@ -636,8 +637,32 @@ footer span a:hover{
     .skills-content{
       flex-direction: column;
       align-items: center;
-  }
-  .skills-content .right{margin-top: auto;}
+    }
+    .skills-content .right{margin-top: auto;}
+    .bsc{
+        
+        height: 170px;
+    }
+
+
+    .hsc{
+        height: 170px;
+    }
+
+    .ssc{
+        height: 170px;
+    }
+    .education .edu-content .a{
+        margin-bottom: 120px;
+        
+    }
+    
+    .education .edu-content .b{
+        
+        margin-bottom: 130px;
+        
+    }
+    
   }
 @media(max-width:1040px){
     .services .serv-content{
