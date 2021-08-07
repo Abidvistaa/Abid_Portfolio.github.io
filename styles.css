@@ -8,7 +8,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+.max-width{
+    width: 100%;
+}
 /*======== Navbar styling =======*/
 .navbar{
     position: fixed;
@@ -169,6 +171,7 @@ section{
     color: black;
     width: 100%;
 }
+
 .education p{
     font-size: 20px;
 
