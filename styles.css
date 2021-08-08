@@ -31,12 +31,12 @@ html{
 }
 
 .navbar .logo a{
-    color: #ff99ff;
+    color: #ff4da6;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo span{
-    color:  	 #ff4da6;
+    color:  	 #ff99ff;
 }
 .navbar .logo a:hover{
     color: yellow;
