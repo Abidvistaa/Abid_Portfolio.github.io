@@ -111,6 +111,9 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+.about .left,.right{
+    margin-top: 55px;
+}
 
 
 .about .about-content .left img{
