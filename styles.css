@@ -669,24 +669,32 @@ footer span a:hover{
 /*======== Responsive media styling Home =======*/
 @media (max-width: 1250px) {
     .skills-content{
-      display: inline-block;
+      flex-direction: column;
       align-items: center;
-      margin: auto;
     }
     .skills-content .right{margin-top: auto;}
 
     .skills .skills-content p{
         font-size: 16px;
     }
+    .skills .skills-content{
+        display: flex;
+        justify-content: unset;
+        margin-top: 20px;
+        
+    }
     .skills .skills-content .lang{
         height: 140px;
     }
-    .skills .skills-content .frame{
-        
-        margin-top: -20px;
-        
+    .skills .skills-content .db{
+        height: 140px;
     }
-    
+    .skills .skills-content .frame{
+        height: 140px;
+    }
+    .skills .skills-content .tools{
+        height: 140px;
+    }
     .education .edu-content .a{
         margin-bottom: 140px;
         
