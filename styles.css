@@ -614,12 +614,14 @@ section{
 .contact .contact-content a{
     font-size: 14px;
 }
-.contact .contact-content .a-git,.a-fb{
+.contact .contact-content .a-git,.a-fb,.a-ph{
     color: #FFF;
 }
 .contact .contact-content .a-git:hover,.a-fb:hover{
-    color: #F8F9F9;
     text-decoration: underline;
+    color: blue;
+}
+.contact .contact-content .a-ph:hover{
     color: blue;
 }
 
