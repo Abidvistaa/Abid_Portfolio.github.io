@@ -669,7 +669,7 @@ footer span a:hover{
 /*======== Responsive media styling Home =======*/
 @media (max-width: 1250px) {
     .skills-content{
-      display: block;
+      display: inline-block;
       align-items: center;
       margin: auto;
     }
