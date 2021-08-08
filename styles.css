@@ -672,12 +672,12 @@ footer span a:hover{
     .skills-content .right{margin-top: auto;}
 
     .skills .skills-content p{
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .skills .skills-content .db{
+    .skills .skills-content .frame{
         
-        margin-bottom: 0;
+        margin-top: -20px;
         
     }
     
@@ -696,7 +696,7 @@ footer span a:hover{
     
     }
     .project p{
-        font-size: 18px;
+        font-size: 16px;
     }
     .bsc{
         opacity: 1;
