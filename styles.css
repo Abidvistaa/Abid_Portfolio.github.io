@@ -240,6 +240,7 @@ section{
     border-radius: 50%;
     padding: 10px;
 }
+
 .education .edu-content .detail{
     padding-right: 200px;
 
@@ -277,15 +278,17 @@ section{
     border-radius: 22px;
     padding: 6px;
     bottom: 0;
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
     opacity: 0;
 }
+
 .bsc.show1{
    
     transition: all 1s ease-in;
     opacity: 1;
     background-color: coral;
 }
+
 .hsc.show2{
    
     transition: all 1s ease-in;
@@ -299,7 +302,21 @@ section{
     background-color: coral;
 }
 
-
+.bsc.show1:hover{
+    cursor: pointer;
+    background-color:  #ffe0cc;
+    transition: all .3s ease-in;
+}
+.hsc.show2:hover{
+    cursor: pointer;
+    background-color:  #ffe0cc;
+    transition: all .3s ease-in;
+}
+.ssc.show3:hover{
+    cursor: pointer;
+    background-color:   #ffe0cc;
+    transition: all .3s ease-in;
+}
 .education .bold{
     font-weight: 600;
 }
