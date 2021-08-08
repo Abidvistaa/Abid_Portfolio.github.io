@@ -670,6 +670,16 @@ footer span a:hover{
       align-items: center;
     }
     .skills-content .right{margin-top: auto;}
+
+    .skills .skills-content p{
+        font-size: 18px;
+    }
+
+    .skills .skills-content .db{
+        
+        margin-bottom: 0;
+        
+    }
     
     .education .edu-content .a{
         margin-bottom: 140px;
@@ -685,6 +695,23 @@ footer span a:hover{
         font-size: 18px;
     
     }
+    .project p{
+        font-size: 18px;
+    }
+    .bsc{
+        opacity: 1;
+    }
+    
+    
+     .hsc{
+        opacity: 1;
+    }
+    
+    
+    .ssc{
+        opacity: 1;
+    }
+    
     
   }
 @media(max-width:1040px){
