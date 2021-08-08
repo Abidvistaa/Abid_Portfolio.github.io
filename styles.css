@@ -671,13 +671,16 @@ footer span a:hover{
     .skills-content{
       flex-direction: column;
       align-items: center;
+      margin: auto;
     }
     .skills-content .right{margin-top: auto;}
 
     .skills .skills-content p{
         font-size: 16px;
     }
-
+    .skills .skills-content .lang{
+        height: 140px;
+    }
     .skills .skills-content .frame{
         
         margin-top: -20px;
@@ -699,7 +702,7 @@ footer span a:hover{
     
     }
     .project p{
-        font-size: 16px;
+        font-size: 14px;
     }
     .bsc{
         opacity: 1;
