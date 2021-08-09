@@ -61,7 +61,7 @@ html{
     font-size: 18px;
     font-weight: 25px;
     margin-left: 25px;
-    
+    text-align: right;
 }
 .navbar .menu li a:hover{
     color: yellow;
@@ -748,7 +748,38 @@ footer span a:hover{
 
   @media(max-width:1275px){
     .navbar .menu{
-        padding-left: 0;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        margin-left: 0;
+    }
+    
+
+    .navbar .menu li{
+        display: block;
+    }
+    
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        opacity: 1;
     }
   }  
 
@@ -793,40 +824,7 @@ footer span a:hover{
 }
 @media(max-width:947px){
 
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-        margin-left: 0;
-    }
     
-
-    .navbar .menu li{
-        display: block;
-    }
-    
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-        opacity: 1;
-    }
     
     .education .edu-content .a{
         margin-bottom: 150px;
