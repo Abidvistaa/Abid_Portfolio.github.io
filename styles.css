@@ -640,6 +640,9 @@ footer{
     color: #777;
     width: 100%;
 }
+footer span a{
+    color:  #ecb3ff;
+}
 footer span a:hover{
     color: red;
     text-decoration: underline;
