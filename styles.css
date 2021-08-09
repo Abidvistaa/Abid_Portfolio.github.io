@@ -36,6 +36,7 @@ html{
     color: #ff4da6;
     font-size: 35px;
     font-weight: 600;
+    
 }
 .navbar .logo span{
     color:  	 #ff99ff;
@@ -48,6 +49,7 @@ html{
 }
 .navbar .menu{
     padding-left: 430px;
+    
 }
 .navbar .menu li{
     list-style: none;
@@ -740,9 +742,7 @@ footer span a:hover{
        
         opacity: 0;
     }
-    .navbar .menu{
-        padding-left: 430px;
-    }
+    
     
   }
 
@@ -933,6 +933,12 @@ footer span a:hover{
     .contact-content{
         flex-direction: column;
     }   
+}
+@media(max-width:768px){
+    .navbar .menu{
+        padding-left: 430px;
+        
+    }
 }
 @media(max-width:690px){
     .navbar .max-width{
