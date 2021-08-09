@@ -17,6 +17,7 @@ html{
     z-index: 999;
     width: 100%;
     font-family: 'Ubuntu',sans-serif;
+    
 }
 .navbar.sticky{
     background: crimson;
@@ -27,6 +28,7 @@ html{
     padding: 15px 80px;
     display: flex;
     align-items: center;
+
     justify-content: space-between;
 }
 
@@ -44,8 +46,12 @@ html{
 .navbar .logo span:hover{
     color: yellow;
 }
+.navbar .menu{
+    padding-left: 430px;
+}
 .navbar .menu li{
     list-style: none;
+    
     display: inline-block;
 }
 .navbar .menu li a{
@@ -64,6 +70,7 @@ html{
     color: #fff;
     cursor: pointer;
     font-size: 30px;
+    opacity: 0;
 }
 
 
@@ -617,16 +624,14 @@ section{
 .contact .contact-content a{
     font-size: 14px;
 }
-.contact .contact-content .a-git,.a-fb,.a-ph{
+.contact .contact-content .a-git,.a-fb,.a-ph,.a-mail{
     color: #FFF;
 }
-.contact .contact-content .a-git:hover,.a-fb:hover{
+.contact .contact-content .a-git:hover,.a-fb:hover,.a-ph:hover,.a-mail:hover{
     text-decoration: underline;
-    color: blue;
+    color: #4169E1;
 }
-.contact .contact-content .a-ph:hover{
-    color: blue;
-}
+
 
 /*======== Footer Section styling =======*/
 footer{
@@ -725,9 +730,20 @@ footer span a:hover{
     .ssc{
         opacity: 1;
     }
+    .menu-btn{
+       
+        opacity: 0;
+    }
     
     
   }
+
+  @media(max-width:1275px){
+    .navbar .menu{
+        padding-left: 0;
+    }
+  }  
+
 @media(max-width:1040px){
     .services .serv-content{
         margin-left: 65px;
@@ -754,6 +770,7 @@ footer span a:hover{
         padding-left: 100px;
         
     }
+   
 }
 
 @media(max-width:1004px){
@@ -762,6 +779,7 @@ footer span a:hover{
         height: 350px;
         width: 350px;
     }
+  
     
     
 }
@@ -777,7 +795,10 @@ footer span a:hover{
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
+        margin-left: 0;
     }
+    
+
     .navbar .menu li{
         display: block;
     }
@@ -796,6 +817,7 @@ footer span a:hover{
     .menu-btn{
         display: block;
         z-index: 999;
+        opacity: 1;
     }
     
     .education .edu-content .a{
@@ -875,6 +897,35 @@ footer span a:hover{
     }
     
 }
+@media(max-width:916px){
+    .education .edu-content .a{
+        margin-bottom: 240px;
+        
+    }
+    
+    .education .edu-content .b{
+        
+        margin-bottom: 270px;
+        
+    }
+    
+    .bsc{
+        height: 300px;
+    }
+    
+    
+     .hsc{
+        height: 300px;
+    }
+    
+    
+    .ssc{
+        height: 300px;
+    }
+    .contact-content{
+        flex-direction: column;
+    }   
+}
 @media(max-width:690px){
     .navbar .max-width{
         padding: 15px 50px;
@@ -899,7 +950,8 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
         
-    }   
+    }
+    
     
 }
 
