@@ -740,7 +740,9 @@ footer span a:hover{
        
         opacity: 0;
     }
-    
+    .navbar .menu{
+        padding-left: 430px;
+    }
     
   }
 
