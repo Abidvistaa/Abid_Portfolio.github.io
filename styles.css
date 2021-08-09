@@ -673,6 +673,9 @@ footer span a:hover{
 
 /*======== Responsive media styling Home =======*/
 @media (max-width: 1250px) {
+    .navbar .menu{
+        padding-left: 430px;
+    }
     .skills-content{
       flex-direction: column;
       align-items: center;
