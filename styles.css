@@ -125,8 +125,14 @@ section{
 }
 .about .left,.right{
     margin-top: 55px;
+    
 }
 
+.about .right{
+    padding-left: 100px;
+
+    
+}
 
 .about .about-content .left img{
     height: 300px;
@@ -137,6 +143,7 @@ section{
 }
 
 .about .about-content .right .text{
+    
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -149,7 +156,7 @@ section{
     font-size: 17px;
     border-radius: 6px;
     border-left: 4px solid seagreen;
-    
+    padding: 4px;
     border-right: 4px solid seagreen;
     
     
@@ -176,10 +183,7 @@ section{
     background:none;
     
 }
-.about .about-content .column{
-    width: 50%;
-    
-}
+
 /*======== Education Section styling =======*/
 .education{
     background: #F5F5F5;
