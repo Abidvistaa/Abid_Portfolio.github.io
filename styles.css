@@ -808,28 +808,28 @@ footer span a:hover{
     }
     
     .education .edu-content .a{
-        margin-bottom: 270px;
-        
+        margin-bottom: 120px;
+        margin-top: 30px;
     }
     
     .education .edu-content .b{
         
-        margin-bottom: 270px;
+        margin-bottom: 120px;
         
     }
     
     .bsc{
-        height: 300px;
+        height: 160px;
     }
     
     
      .hsc{
-        height: 300px;
+        height: 160px;
     }
     
     
     .ssc{
-        height: 300px;
+        height: 160px;
     }
     .education .edu-content .detail{
         padding-right: 10px;
