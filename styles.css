@@ -819,12 +819,12 @@ footer span a:hover{
     }
     
     .bsc{
-        height: 160px;
+        height: 170px;
     }
     
     
      .hsc{
-        height: 160px;
+        height: 170px;
     }
     
     
@@ -837,6 +837,10 @@ footer span a:hover{
     }
     .education .edu-content .year{
         padding-right: 10px;
+    
+    }
+    .education p{
+        font-size: 18px;
     
     }
     .contact-content{
