@@ -12,67 +12,70 @@ html{
 
 
 /*======== Navbar styling =======*/
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    
+}
 .navbar{
+    max-height: 11vh;
     position: fixed;
-    z-index: 999;
     width: 100%;
-    font-family: 'Ubuntu',sans-serif;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 .navbar.sticky{
+    padding: 15px 0;
     background: crimson;
 }
-
 .navbar .max-width{
-    max-width: 1300px;
-    padding: 15px 80px;
     display: flex;
     align-items: center;
-
     justify-content: space-between;
 }
-
 .navbar .logo a{
-    color: #ff4da6;
+    color: #ff99ff;
     font-size: 35px;
     font-weight: 600;
-    
 }
-.navbar .logo span{
-    color:  	 #ff99ff;
+.navbar .logo a span{
+    color:#ff4da6;
+    
 }
 .navbar .logo a:hover{
     color: yellow;
 }
-.navbar .logo span:hover{
+.navbar .logo a span:hover{
     color: yellow;
 }
-.navbar .menu{
-    padding-left: 430px;
-    
+.navbar .menu li a:hover{
+    color: yellowgreen;
 }
 .navbar .menu li{
     list-style: none;
-    
     display: inline-block;
 }
 .navbar .menu li a{
+    display: block;
     color: #fff;
     font-size: 18px;
-    font-weight: 25px;
+    font-weight: 500;
     margin-left: 25px;
-    text-align: right;
+    transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
-    color: yellow;
-}
+
+
+
 
 /*======== Menu Button styling =======*/
 .menu-btn{
     color: #fff;
+    font-size: 23px;
     cursor: pointer;
-    font-size: 30px;
-    opacity: 0;
+    display: none;
 }
 
 
@@ -226,7 +229,7 @@ section{
     margin-top: 100px;
 }
 .education .edu-content .year{
-    padding-left: 200px;
+    padding-left: 120px;
     margin-top: 30px;
 }
 
@@ -237,6 +240,7 @@ section{
     margin-bottom: 145px;
     padding: 10px;
     box-shadow: 0 0 9px;
+    
 }
 
 .education .edu-content .b{
@@ -245,25 +249,28 @@ section{
     border-radius: 50%;
     margin-bottom: 140px;
     padding: 10px;
+    
 }
 .education .edu-content .c{
     box-shadow: 0 0 9px;
     border: 5px solid salmon;
     border-radius: 50%;
     padding: 10px;
+    
 }
 
 .education .edu-content .detail{
-    padding-right: 200px;
+    padding-right: 120px;
 
 }
 .bsc{
     box-shadow: 0 0 7px;
     height: 190px;
+   
     border: 2px solid brown;
     border-radius: 22px;
     margin-bottom: 15px;
-    padding: 6px;
+    padding: 9px;
     bottom: 0;
     transition: all 1s ease-in;
     opacity: 0;
@@ -276,7 +283,7 @@ section{
     border: 2px solid brown;
     border-radius: 22px;
     margin-bottom: 15px;
-    padding: 6px;
+    padding: 9px;
     bottom: 0;
     transition: all 1s ease-in;
     opacity: 0;
@@ -288,7 +295,7 @@ section{
     height: 190px;
     border: 2px solid brown;
     border-radius: 22px;
-    padding: 6px;
+    padding: 9px;
     bottom: 0;
     transition: all .5s ease-in;
     opacity: 0;
@@ -378,12 +385,52 @@ section{
     box-shadow: 0 0 8px;
     background-color: #ffe0b3;
     height: 130px;
-    width: 520px;
+    width: 440px;
     margin-bottom: 20px;
     padding: 12px;
     display: flex;
     border-left: 4px solid blueviolet;
     border-radius: 6px;
+    transition: all 0.3s ease;
+    
+}
+.skills .skills-content .db{
+    box-shadow: 0 0 8px;
+    background-color: #c6ecd9;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  
+}
+.skills .skills-content .frame{
+    box-shadow: 0 0 8px;
+    background-color:#ffb3b3 ;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    
+}
+.skills .skills-content .tools{
+
+    box-shadow: 0 0 8px;
+    background-color:#b3c6ff ;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 .skills .skills-content .lang:hover{
@@ -391,35 +438,13 @@ section{
     cursor: pointer;
     transform: scale(1.05);
 }
-.skills .skills-content .db{
-    box-shadow: 0 0 8px;
-    background-color: #c6ecd9;
-    height: 130px;
-    width: 520px;
-    margin-bottom: 20px;
-    padding: 12px;
-    display: flex;
-    border-left: 4px solid blueviolet;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
+
 .skills .skills-content .db:hover{
     transition: all 0.3s ease;
     cursor: pointer;
     transform: scale(1.05);
 }
-.skills .skills-content .frame{
-    box-shadow: 0 0 8px;
-    background-color:#ffb3b3 ;
-    height: 130px;
-    width: 520px;
-    margin-bottom: 20px;
-    padding: 12px;
-    display: flex;
-    border-left: 4px solid blueviolet;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
+
 .skills .skills-content .frame:hover{
     transition: all 0.3s ease;
     cursor: pointer;
@@ -427,22 +452,12 @@ section{
 }
 .skills .skills-content .left{
     margin-top: 70px;
+
 }
 .skills .skills-content .right{
     margin-top: 70px;
 }
-.skills .skills-content .tools{
-    box-shadow: 0 0 8px;
-    background-color:#b3c6ff ;
-    height: 130px;
-    width: 520px;
-    margin-bottom: 20px;
-    padding: 12px;
-    display: flex;
-    border-left: 3px solid blueviolet;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
+
 .skills .skills-content .tools:hover{
     transition: all 0.3s ease;
     cursor: pointer;
@@ -678,9 +693,7 @@ footer span a:hover{
 
 /*======== Responsive media styling Home =======*/
 @media (max-width: 1250px) {
-    .navbar .menu{
-        padding-left: 430px;
-    }
+    
     .skills-content{
       flex-direction: column;
       align-items: center;
@@ -738,50 +751,19 @@ footer span a:hover{
     .ssc{
         opacity: 1;
     }
-    .menu-btn{
-       
-        opacity: 0;
-    }
     
+    .education .edu-content .year{
+        padding-right: 120px;
+    
+    }
+    .education .edu-content .detail{
+        padding-right: 120px;
+    
+    }
     
   }
 
-  @media(max-width:1275px){
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-        margin-left: 0;
-    }
-    
 
-    .navbar .menu li{
-        display: block;
-    }
-    
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-        opacity: 1;
-    }
-  }  
 
 @media(max-width:1040px){
     .services .serv-content{
@@ -809,6 +791,70 @@ footer span a:hover{
         padding-left: 100px;
         
     }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .education .edu-content .a{
+        margin-bottom: 270px;
+        
+    }
+    
+    .education .edu-content .b{
+        
+        margin-bottom: 270px;
+        
+    }
+    
+    .bsc{
+        height: 300px;
+    }
+    
+    
+     .hsc{
+        height: 300px;
+    }
+    
+    
+    .ssc{
+        height: 300px;
+    }
+    .education .edu-content .detail{
+        padding-right: 10px;
+    
+    }
+    .education .edu-content .year{
+        padding-right: 10px;
+    
+    }
+    .contact-content{
+        flex-direction: column;
+    }   
    
 }
 
@@ -827,13 +873,13 @@ footer span a:hover{
     
     
     .education .edu-content .a{
-        margin-bottom: 150px;
+        margin-bottom: 230px;
         
     }
     
     .education .edu-content .b{
         
-        margin-bottom: 140px;
+        margin-bottom: 250px;
         
     }
     .education .edu-content .year{
@@ -857,34 +903,25 @@ footer span a:hover{
     
  
     .skills .skills-content .frame{
-        height: 150px;
+        height: 160px;
         width: 300px;
     }
     .skills .skills-content .lang{
-        height: 150px;
+        height: 160px;
         width: 300px;
     }
     .skills .skills-content .tools{
-        height: 150px;
+        height: 160px;
         width: 300px;
     }
     .skills .skills-content .db{
-        height: 150px;
+        height: 160px;
         width: 300px;
     }
     
 }
 @media(max-width:884px){
-    .education .edu-content .a{
-        margin-bottom: 180px;
-        
-    }
     
-    .education .edu-content .b{
-        
-        margin-bottom: 140px;
-        
-    }
     .education .edu-content .year{
         margin-top: 50px;
         
@@ -903,9 +940,40 @@ footer span a:hover{
     }
     
 }
-@media(max-width:916px){
+
+@media(max-width:671px){
+    .education .title{
+    
+        padding-bottom: 60px;
+    
+    }
+    .skills .title{
+    
+        padding-bottom: 60px;
+    
+    }
+    .project .title{
+    
+        padding-bottom: 60px;
+    
+    }
+    .contact .title{
+    
+        padding-bottom: 60px;
+    
+    }
+
+    .education .edu-content .year{
+        padding-left: 1px;
+        
+    }
+
+    .about p{
+        font-size: 12px;
+    }
+
     .education .edu-content .a{
-        margin-bottom: 240px;
+        margin-bottom: 270px;
         
     }
     
@@ -915,77 +983,5 @@ footer span a:hover{
         
     }
     
-    .bsc{
-        height: 300px;
-    }
-    
-    
-     .hsc{
-        height: 300px;
-    }
-    
-    
-    .ssc{
-        height: 300px;
-    }
-    .contact-content{
-        flex-direction: column;
-    }   
-}
-@media(max-width:768px){
-    .navbar .menu{
-        padding-left: 430px;
-        
-    }
-}
-@media(max-width:690px){
-    .navbar .max-width{
-        padding: 15px 50px;
-    }
-    .home .home-content .text-2{
-        font-size: 50px;
-        
-    }
-    .home .home-content .text-3{
-        font-size: 25px;    
-    }
-    .home .home-content{
-        margin:200px 0 auto 50px;
-    
-    }
-    .home .home-content a{
-
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-    
-    .services .serv-content .card{
-        width: 100%;
-        
-    }
-    
-    
 }
 
-@media(max-width:500px){
-    .home .home-content .text-2{
-        font-size: 40px;
-        
-    }
-    .home .home-content .text-3{
-        font-size: 20px;    
-    }
-    .home .home-content{
-        margin:200px 0 auto 50px;
-    
-    }
-    
-    .home .home-content a{
-
-        font-size: 10px;
-       padding: 4px 8px;
-    }
-    
-    
-
-}
