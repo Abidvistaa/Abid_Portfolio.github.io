@@ -799,35 +799,7 @@ footer span a:hover{
         padding-left: 100px;
         
     }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
+    
     .education .edu-content .a{
         margin-bottom: 270px;
         
@@ -870,23 +842,65 @@ footer span a:hover{
         
         margin-bottom: 2px;
     }
+    .about .about-content .left img{
+        height: 300px;
+        width: 300px;
+        
+    }
+    .about p{
+        font-size: 14px;
+        
+    }
 }
 
 @media(max-width:1004px){
     
-    .about .about-content .left img{
-        height: 250px;
-        width: 250px;
+    .about .about-content{
+        display: inline;
     }
-    .about p{
-        font-size: 14px;
+    .about .about-content .left{
+        width: 100%;
+        
+    }
+
+    .about .about-content .right{
+        width: 100%;
+        
     }
     
     
 }
 @media(max-width:947px){
 
-    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
     
     .education .edu-content .a{
         margin-bottom: 230px;
@@ -903,19 +917,6 @@ footer span a:hover{
         
     }
     
-    
-    .about .about-content{
-        display: inline;
-    }
-    .about .about-content .left{
-        width: 100%;
-        
-    }
-
-    .about .about-content .right{
-        width: 100%;
-        
-    }
     
  
     .skills .skills-content .frame{
