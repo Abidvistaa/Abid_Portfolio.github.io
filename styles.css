@@ -309,35 +309,35 @@ section{
    
     transition: all 1s ease-in;
     opacity: 1;
-    background-color: coral;
+    background-color: #ffe0cc;
 }
 
 .hsc.show2{
    
     transition: all 1s ease-in;
     opacity: 1;
-    background-color: coral;
+    background-color: #ffe0cc;
 }
 .ssc.show3{
    
     transition: all 1s ease-in;
     opacity: 1;
-    background-color: coral;
+    background-color: #ffe0cc;
 }
 
 .bsc.show1:hover{
     cursor: pointer;
-    background-color:  #ffe0cc;
+    background-color:  coral;
     transition: all .3s ease-in;
 }
 .hsc.show2:hover{
     cursor: pointer;
-    background-color:  #ffe0cc;
+    background-color:  coral;
     transition: all .3s ease-in;
 }
 .ssc.show3:hover{
     cursor: pointer;
-    background-color:   #ffe0cc;
+    background-color:   coral;
     transition: all .3s ease-in;
 }
 .education .bold{

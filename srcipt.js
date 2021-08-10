@@ -11,17 +11,17 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
 
-        if(this.scrollY>280){
+        if(this.scrollY>400){
             $('.bsc').addClass("show1");
         }else{
             $('.bsc').removeClass("show1");
         }
-        if(this.scrollY>430){
+        if(this.scrollY>600){
             $('.hsc').addClass("show2");
         }else{
             $('.hsc').removeClass("show2");
         }
-        if(this.scrollY>560){
+        if(this.scrollY>800){
             $('.ssc').addClass("show3");
         }else{
             $('.ssc').removeClass("show3");
