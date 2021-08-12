@@ -502,14 +502,14 @@ section{
     position: absolute;
     bottom: -5px;
     left: 50%;
-    width: 200px;
+    width: 250px;
     height: 3px;
     background: #333;
     transform: translateX(-50%);
     margin-bottom: 10px;
 }
 .project .title::after{
-    content: " Notable Projets ";
+    content: " Some Notable Projets ";
     position: absolute;
     bottom: -15px;
     left: 50%;
