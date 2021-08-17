@@ -642,6 +642,32 @@ section{
     font-size: 30px;
     margin-bottom: 10px;
 }
+.contact .contact-content i{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact .i0:hover{
+    cursor: pointer;
+    color: red;
+}
+.contact .i1:hover{
+    cursor: pointer;
+    color: crimson;
+}
+.contact .i2:hover{
+    cursor: pointer;
+    color:  #009900;
+}
+.contact .i3:hover{
+    cursor: pointer;
+    color: #f2d9e6;
+}
+.contact .i4:hover{
+    cursor: pointer;
+    color:	 #3366ff;
+}
 .contact .contact-content a{
     font-size: 14px;
 }
