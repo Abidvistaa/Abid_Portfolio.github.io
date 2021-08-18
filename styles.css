@@ -524,27 +524,28 @@ section{
     margin-top: 60px;
 }
 .project .carousel .card{
-    
-    background: #e6e6ff;
+    color: whitesmoke;
+    background:  #666699;
     border-radius: 6px;
+    
     padding: 10px 15px;
     text-align: center;
     transition: all 0.3s ease;
 }
 .project .carousel .card:hover{
-    background: crimson;
+    background: #ff355e;
     color: #fff;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 .project .carousel .card:hover img{
-    border-color:yellow ;
+    border-color:#746cc0;
 }
 .project .carousel .card:hover .box{
     transform: scale(1.05);
 }
 .project .carousel .card .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin:10px 0 7px 0;
 }
@@ -558,7 +559,10 @@ section{
     
     height: 150px;
     border-radius: 6px;
-    border: 2px solid black;
+    border: 2px solid #f5f5f5;
+}
+.project p{
+    font-size: 13px;
 }
 .round{
     padding-left: 5px;
@@ -798,6 +802,12 @@ footer span a:hover{
         padding-right: 120px;
     
     }
+    .project .carousel .card .text{
+        font-size: 16px;
+        font-weight: 500;
+        
+    }
+    
     .project p{
         font-size: 12px;
     }
@@ -985,12 +995,21 @@ footer span a:hover{
         width: 300px;
     }
     
+    
 }
 @media(max-width:884px){
     
     .education .edu-content .year{
         margin-top: 50px;
         
+    }
+    .project .carousel .card .text{
+        font-size: 12px;
+        font-weight: 200;
+        margin:10px 0 7px 0;
+    }
+    .project p{
+        font-size: 9px;
     }
 }
 
