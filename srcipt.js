@@ -69,7 +69,7 @@ $(document).ready(function(){
     
 
     var typed=new Typed(".typing-2",{
-        strings:["DotNet Enthusiast"],    
+        strings:["DotNet Enthusiast","Software Engineer"],    
         typeSpeed:100,
         backSpeed:60,
         loop:true
