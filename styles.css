@@ -982,6 +982,7 @@ footer span a:hover{
         height: 160px;
         width: 300px;
     }
+   
     .skills .skills-content .lang{
         height: 160px;
         width: 300px;
@@ -994,7 +995,9 @@ footer span a:hover{
         height: 160px;
         width: 300px;
     }
-    
+    .skills .skills-content .skillPara {
+        font-size: 18px;
+    }
     
 }
 @media(max-width:884px){
