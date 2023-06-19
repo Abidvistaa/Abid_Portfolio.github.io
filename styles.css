@@ -259,14 +259,34 @@ section{
     box-shadow: 0 0 9px;
     border: 5px solid salmon;
     border-radius: 50%;
+    margin-bottom: 140px;
     padding: 10px;
     
 }
-
+.education .edu-content .d{
+    box-shadow: 0 0 9px;
+    border: 5px solid salmon;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
 .education .edu-content .detail{
     padding-right: 120px;
 
 }
+.msc{
+    box-shadow: 0 0 7px;
+    height: 190px;
+   
+    border: 2px solid brown;
+    border-radius: 22px;
+    margin-bottom: 15px;
+    padding: 9px;
+    bottom: 0;
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+
 .bsc{
     box-shadow: 0 0 7px;
     height: 190px;
@@ -304,38 +324,50 @@ section{
     transition: all .5s ease-in;
     opacity: 0;
 }
-
-.bsc.show1{
+.msc.show1{
    
     transition: all 1s ease-in;
     opacity: 1;
     background-color: #ffe0cc;
 }
 
-.hsc.show2{
-   
-    transition: all 1s ease-in;
-    opacity: 1;
-    background-color: #ffe0cc;
-}
-.ssc.show3{
+.bsc.show2{
    
     transition: all 1s ease-in;
     opacity: 1;
     background-color: #ffe0cc;
 }
 
-.bsc.show1:hover{
+.hsc.show3{
+   
+    transition: all 1s ease-in;
+    opacity: 1;
+    background-color: #ffe0cc;
+}
+.ssc.show4{
+   
+    transition: all 1s ease-in;
+    opacity: 1;
+    background-color: #ffe0cc;
+}
+
+.msc.show1:hover{
     cursor: pointer;
     background-color:  coral;
     transition: all .3s ease-in;
 }
-.hsc.show2:hover{
+
+.bsc.show2:hover{
     cursor: pointer;
     background-color:  coral;
     transition: all .3s ease-in;
 }
-.ssc.show3:hover{
+.hsc.show3:hover{
+    cursor: pointer;
+    background-color:  coral;
+    transition: all .3s ease-in;
+}
+.ssc.show4:hover{
     cursor: pointer;
     background-color:   coral;
     transition: all .3s ease-in;
@@ -502,14 +534,14 @@ section{
     position: absolute;
     bottom: -5px;
     left: 50%;
-    width: 250px;
+    width: 300px;
     height: 3px;
     background: #333;
     transform: translateX(-50%);
     margin-bottom: 10px;
 }
 .project .title::after{
-    content: " Some Notable Projets ";
+    content: " Academic Notable Projets ";
     position: absolute;
     bottom: -15px;
     left: 50%;
@@ -768,7 +800,7 @@ footer span a:hover{
         
     }
     
-    .education .edu-content .b{
+    .education .edu-content .d{
         
         margin-bottom: 150px;
         
@@ -780,6 +812,10 @@ footer span a:hover{
     .project p{
         font-size: 14px;
     }
+    .msc{
+        opacity: 1;
+    }
+    
     .bsc{
         opacity: 1;
     }
@@ -829,7 +865,7 @@ footer span a:hover{
         
     }
     
-    .education .edu-content .b{
+    .education .edu-content .c{
         
         margin-bottom: 150px;
         
@@ -848,22 +884,22 @@ footer span a:hover{
         margin-top: 40px;
     }
     
-    .education .edu-content .b{
+    .education .edu-content .d{
         
         margin-bottom: 140px;
         
     }
-    
+    .msc{
+        height: 180px;
+    }
+
     .bsc{
         height: 180px;
     }
     
-    
      .hsc{
         height: 180px;
     }
-    
-    
     .ssc{
         height: 180px;
     }
@@ -954,7 +990,7 @@ footer span a:hover{
         
     }
     
-    .education .edu-content .b{
+    .education .edu-content .c{
         
         margin-bottom: 210px;
         
@@ -963,6 +999,10 @@ footer span a:hover{
         margin-top: 50px;
         
     }
+    .msc{
+        height: 250px;
+    }
+
     .bsc{
         height: 250px;
     }

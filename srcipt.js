@@ -11,20 +11,25 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
 
-        if(this.scrollY>400){
-            $('.bsc').addClass("show1");
+        if(this.scrollY>200){
+            $('.msc').addClass("show1");
         }else{
-            $('.bsc').removeClass("show1");
+            $('.msc').removeClass("show1");
+        }
+        if(this.scrollY>400){
+            $('.bsc').addClass("show2");
+        }else{
+            $('.bsc').removeClass("show2");
         }
         if(this.scrollY>600){
-            $('.hsc').addClass("show2");
+            $('.hsc').addClass("show3");
         }else{
-            $('.hsc').removeClass("show2");
+            $('.hsc').removeClass("show3");
         }
         if(this.scrollY>800){
-            $('.ssc').addClass("show3");
+            $('.ssc').addClass("show4");
         }else{
-            $('.ssc').removeClass("show3");
+            $('.ssc').removeClass("show4");
         }
     
     });
