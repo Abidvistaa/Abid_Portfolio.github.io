@@ -43,7 +43,6 @@ html{
 }
 .navbar .logo a span{
     color:#ff4da6;
-    
 }
 .navbar .logo a:hover{
     color: yellow;
@@ -135,7 +134,7 @@ section{
 }
 
 .about .about-content .left img{
-    height: 300px;
+    height: 350px;
     width: 300px;
     object-fit: cover;
     border-radius: 50%;
