@@ -45,13 +45,13 @@ html{
     color:#ff4da6;
 }
 .navbar .logo a:hover{
-    color: yellow;
+    color: #004C99;
 }
 .navbar .logo a span:hover{
-    color: yellow;
+    color: #990099;
 }
 .navbar .menu li a:hover{
-    color: yellowgreen;
+    color: #00CC00;
 }
 .navbar .menu li{
     list-style: none;
