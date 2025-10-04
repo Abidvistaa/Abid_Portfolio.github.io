@@ -135,7 +135,6 @@ section{
 }
 
 .about .about-content .right .text{
-    
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -237,9 +236,10 @@ section{
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    position: relative;
+
 background: #F5F5F5;
-    opacity: 0; 
+
+
      border-top: 10px solid rgb(155, 99, 187); 
 
     padding-top: 15px; 
@@ -247,28 +247,28 @@ background: #F5F5F5;
       transition: transform 0.3s ease, box-shadow 0.3s ease; 
     box-shadow: 0 16px 32px rgba(238, 24, 24, 0.2);
 }
-
+    /*opacity: 0;  */ 
+    /*position: relative; */
 
 .exp-column:hover {
     background: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1); /* subtle shadow */
 }
 
+    /* .exp-column.fade-in {
+        animation: fadeIn 1s ease forwards;
+    }
 
-.exp-column.fade-in {
-    animation: fadeIn 1s ease forwards;
-}
-
-.exp-column:nth-child(1).fade-in {
-    animation-delay: 0.2s;
-}
-.exp-column:nth-child(2).fade-in {
-    animation-delay: 0.5s;
-}
-.exp-column:nth-child(3).fade-in {
-    animation-delay: 0.8s;
-}
-
+    .exp-column:nth-child(1).fade-in {
+        animation-delay: 0.2s;
+    }
+    .exp-column:nth-child(2).fade-in {
+        animation-delay: 0.5s;
+    }
+    .exp-column:nth-child(3).fade-in {
+        animation-delay: 0.8s;
+    } */
+     
 /* Roles and company */
 .exp-column .role {
     font-size: 20px;
@@ -1176,7 +1176,9 @@ footer span a:hover{
     
     .about .about-content{
         display: inline;
+
     }
+    
     .about .about-content .left{
         width: 100%;
         
@@ -1294,6 +1296,7 @@ footer span a:hover{
 
 
 @media(max-width:671px){
+
     .education .title{
     
         padding-bottom: 60px;
@@ -1321,15 +1324,9 @@ footer span a:hover{
     }
 
     .about p{
-        font-size: 14px;
-    }
+        font-size: 140px;
+    } 
+    
+}
 
-    
-    
-}
-@media(max-width:595px){
-    .about .about-content{
-        display: block;
-        }
-}
 
