@@ -81,18 +81,18 @@ $(document).ready(function(){
     });
 
     // experience animation script
-    const columns = document.querySelectorAll('.exp-column');
+    // const columns = document.querySelectorAll('.exp-column');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target); // optional: trigger only once
-            }
-        });
-    }, { threshold: 0.3 }); // triggers when 30% of the column is visible
+    // const observer = new IntersectionObserver((entries, observer) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add('fade-in');
+    //             observer.unobserve(entry.target); // optional: trigger only once
+    //         }
+    //     });
+    // }, { threshold: 0.3 }); // triggers when 30% of the column is visible
 
-    columns.forEach(column => {
-        observer.observe(column);
-    });
+    // columns.forEach(column => {
+    //     observer.observe(column);
+    // });
 });
