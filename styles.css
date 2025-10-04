@@ -119,17 +119,11 @@ section{
 }
 .about .about-content{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    gap: 100px
 }
 .about .left,.right{
     margin-top: 55px;
-    
-}
-
-.about .right{
-    padding-left: 100px;
-
     
 }
 
@@ -162,7 +156,6 @@ section{
 .about .about-content .right p{
     text-align: justify;
     padding: 4px;
-    
 }
 
 .about .about-content .right a{
@@ -329,7 +322,7 @@ background: #F5F5F5;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* top-align text */
+    justify-content: flex-start; 
     min-height: 180px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -616,7 +609,8 @@ background: #F5F5F5;
 }
 .education .edu-content{
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    gap: 100px;
     margin-top: 100px;
 }
 .education .edu-content .year{
@@ -765,7 +759,7 @@ background: #F5F5F5;
 
 /*======== Projects Section styling =======*/
 .project{
-    background-color: #F5F5F5;
+   
     width: 100%;
     
 }
@@ -1102,12 +1096,9 @@ footer span a:hover{
 
 
 @media(max-width:1040px){
-    .services .serv-content{
-        margin-left: 65px;
-    }
-    .services .serv-content .card{
-        width: 40%;
-
+ .education .edu-content{
+        gap: 50px;
+        
     }
     .education .edu-content .a{
         margin-bottom: 140px;
@@ -1120,11 +1111,11 @@ footer span a:hover{
         
     }
     .education .edu-content .year{
-        padding-left: 100px;
+        padding-left: 30px;
         
     }
     .education .edu-content .detail{
-        padding-left: 100px;
+        padding-right: 30px;
         
     }
     
@@ -1337,15 +1328,8 @@ footer span a:hover{
     
 }
 @media(max-width:595px){
-    
-    .about .about-content .right .para{
-        
-        border-radius: 0;
-        border-left: 0px solid seagreen;
-        
-        border-right: 0px solid seagreen;
-        
-        
-    }
+    .about .about-content{
+        display: block;
+        }
 }
 
