@@ -83,7 +83,7 @@ html{
 section{
     padding: 100px 100px;
 }
-.about, .education, .skills,.contact{
+.about, .experience, .education, .skills,.contact{
     font-family: 'Poppins', sans-serif;
 }
 .about .title{
@@ -180,6 +180,385 @@ section{
     color: crimson;
     background:none;
     
+}
+
+/*======== Experience Section styling =======*/
+
+.experience {
+          background: #F5F5F5;
+    color: black;
+    width: 100%;
+    }
+.experience .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 20px;
+
+}
+.experience .title::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+.experience .title::after{
+    content: " Whom I worked with ";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    background: #F5F5F5;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.experience-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in to columns */
+.exp-column {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+
+    opacity: 0; 
+}
+
+
+.exp-column.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.exp-column:nth-child(1).fade-in {
+    animation-delay: 0.2s;
+}
+.exp-column:nth-child(2).fade-in {
+    animation-delay: 0.5s;
+}
+.exp-column:nth-child(3).fade-in {
+    animation-delay: 0.8s;
+}
+
+
+/* Right vertical line for all columns except last */
+
+
+/* Roles and company */
+.exp-column .role {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.exp-column .company {
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.exp-column ul {
+    list-style: disc;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.exp-column ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .experience-columns {
+    display: block; /* each column takes full width */
+}
+
+.exp-column {
+    display: block; /* ensure column behaves as block */
+    width: 100%;    /* full width */
+    margin-bottom: 20px; /* spacing between columns */
+}
+
+}
+
+.iprojectcards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+  }
+
+  .iproject {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* top-align text */
+    min-height: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+.iproject-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+
+    color: black;
+}
+
+  .iproject:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .proj-title {
+    font-size: 1.2em;
+    margin-bottom: 5px; /* small spacing */
+    font-weight: bold;
+  }
+
+  .proj-desc {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin-top: 0; /* remove space above */
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1200px) {
+    .iprojectcards-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .iprojectcards-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+/*======== Skills Section styling =======*/
+
+.skills .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 20px;
+
+}
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 170px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+.skills .title::after{
+    content: " What I know ";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    background: #fff;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+.skills .skills-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+
+.skills .skills-content .lang{
+    box-shadow: 0 0 8px;
+    background-color: #b3c6ff;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    
+}
+.skills .skills-content .db{
+    box-shadow: 0 0 8px;
+    background-color: #c6ecd9;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  
+}
+.skills .skills-content .frame{
+    box-shadow: 0 0 8px;
+    background-color:#e6ccff ;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    
+}
+.skills .skills-content .tools{
+
+    box-shadow: 0 0 8px;
+    background-color: #e6f0ff;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .lang:hover{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.skills .skills-content .db:hover{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.skills .skills-content .frame:hover{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.skills .skills-content .left{
+    margin-top: 70px;
+
+}
+.skills .skills-content .right{
+    margin-top: 70px;
+}
+
+.skills .skills-content .tools:hover{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.skills .skills-content .icon{
+    font-size: 40px;
+    margin-right: 10px;
+    
+    margin-top: 25px;
+    color: #ff4da6;
+}
+
+.skills .skills-content .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.skills .skills-content .web-services {
+    box-shadow: 0 0 8px;
+    background-color: #FFB8FF;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .design-patterns {
+    box-shadow: 0 0 8px;
+    background-color:  #ffe6e6;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .reports {
+    box-shadow: 0 0 8px;
+    background-color: #ffb3b3; 
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .security {
+    box-shadow: 0 0 8px;
+    background-color:   #ffe0b3;
+    height: 130px;
+    width: 440px;
+    margin-bottom: 20px;
+    padding: 12px;
+    display: flex;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for all new cards */
+.skills .skills-content .web-services:hover,
+.skills .skills-content .design-patterns:hover,
+.skills .skills-content .reports:hover,
+.skills .skills-content .security:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 /*======== Education Section styling =======*/
@@ -373,144 +752,6 @@ section{
 .education .bold{
     font-weight: 600;
 }
-
-/*======== Skills Section styling =======*/
-
-.skills .title{
-    position: relative;
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 20px;
-
-}
-.skills .title::before{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 170px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-}
-.skills .title::after{
-    content: " What I know ";
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    background: #fff;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-}
-.skills .skills-content{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    
-}
-
-
-.skills .skills-content .lang{
-    box-shadow: 0 0 8px;
-    background-color: #ffe0b3;
-    height: 130px;
-    width: 440px;
-    margin-bottom: 20px;
-    padding: 12px;
-    display: flex;
-    border-left: 4px solid blueviolet;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    
-}
-.skills .skills-content .db{
-    box-shadow: 0 0 8px;
-    background-color: #c6ecd9;
-    height: 130px;
-    width: 440px;
-    margin-bottom: 20px;
-    padding: 12px;
-    display: flex;
-    border-left: 4px solid blueviolet;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-  
-}
-.skills .skills-content .frame{
-    box-shadow: 0 0 8px;
-    background-color:#ffb3b3 ;
-    height: 130px;
-    width: 440px;
-    margin-bottom: 20px;
-    padding: 12px;
-    display: flex;
-    border-left: 4px solid blueviolet;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    
-}
-.skills .skills-content .tools{
-
-    box-shadow: 0 0 8px;
-    background-color:#b3c6ff ;
-    height: 130px;
-    width: 440px;
-    margin-bottom: 20px;
-    padding: 12px;
-    display: flex;
-    border-left: 4px solid blueviolet;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .lang:hover{
-    transition: all 0.3s ease;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-.skills .skills-content .db:hover{
-    transition: all 0.3s ease;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-.skills .skills-content .frame:hover{
-    transition: all 0.3s ease;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.skills .skills-content .left{
-    margin-top: 70px;
-
-}
-.skills .skills-content .right{
-    margin-top: 70px;
-}
-
-.skills .skills-content .tools:hover{
-    transition: all 0.3s ease;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.skills .skills-content .icon{
-    font-size: 40px;
-    margin-right: 10px;
-    
-    margin-top: 25px;
-    color: #ff4da6;
-}
-
-.skills .skills-content .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-top: 25px;
-}
-
 
 /*======== Projects Section styling =======*/
 .project{
