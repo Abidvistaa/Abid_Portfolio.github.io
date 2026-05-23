@@ -298,21 +298,21 @@ background: #F5F5F5;
 }
 
 .iprojectcards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
     gap: 10px;
-  }
+}
 
-  .iproject {
+.iproject {
+    width: calc(33.333% - 10px);
     padding: 20px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
     min-height: 180px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+}
+
 .iproject-title {
     font-size: 24px;
     font-weight: 500;
@@ -323,7 +323,7 @@ background: #F5F5F5;
 }
 
   .iproject:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   }
 
@@ -340,17 +340,17 @@ background: #F5F5F5;
   }
 
   /* Responsive */
-  @media screen and (max-width: 1200px) {
-    .iprojectcards-container {
-      grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1200px) {
+    .iproject {
+        width: calc(50% - 10px);
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
-    .iprojectcards-container {
-      grid-template-columns: 1fr;
+@media screen and (max-width: 768px) {
+    .iproject {
+        width: 100%;
     }
-  }
+}
 
 /*======== Skills Section styling =======*/
 
